@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.component {
+    display: flex;
+    max-width: 768px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.3333%;
+    padding: 45px;
+    gap: 30px;
+}
+
+.card-1 a,
+.card-2 a,
+.card-3 a {
+    font-size: .75rem;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+    width: max-content;
+    border-radius: 25px;
+    padding: 10px 25px;
+    margin-top: 40px;
+}
+
+.card-1 {
+    background-color: #e38826;
+    border-radius: 8px 0 0 8px;
+}
+
+.card-1 a {
+    color: #e38826;
+}
+
+.card-1 a:hover {
+    background-color: #e38826;
+    color: #f2f2f2
+}
+
+.card-2 {
+    background-color: #006970;
+}
+
+.card-2 a {
+    color: #006970;
+}
+
+.card-2 a:hover {
+    background-color: #006970;
+    color: #f2f2f2;
+}
+
+.card-3 {
+    background-color: #004241;
+    border-radius: 0 8px 8px 0;
+}
+
+.card-3 a {
+    color: #004241;
+}
+
+.card-3 a:hover {
+    background-color: #004241;
+    color: #f2f2f2;
+}
+
+img {
+    width: 50px;
+}
+
+h1 {
+    color: #f2f2f2;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: .75rem;
+    line-height: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.attribution {
+    font-size: .75rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    .component {
+        margin: 25px 0;
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 254px;
+    }
+
+    .card-1 a,
+    .card-2 a,
+    .card-3 a {
+        margin-top: 0;
+    }
+
+    .card-1 {
+        border-radius: 8px 8px 0 0 ;
+    }
+
+    .card-3 {
+        border-radius: 0 0 8px 8px;
+    }
+}
