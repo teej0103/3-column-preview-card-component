@@ -97,7 +97,7 @@ h1 {
 p {
     color: hsla(0, 0%, 100%, 0.75);
     font-size: .75rem;
-    line-height: 1.25rem;
+    line-height: 1.5;
 }
 
 a {
